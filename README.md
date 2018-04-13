@@ -21,7 +21,7 @@ by adding `newrelic_insights` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:newrelic_insights, "~> 1.0.0"}
+    {:newrelic_insights, "~> 1.0.1"}
   ]
 end
 ```
