@@ -31,14 +31,19 @@ config :newrelic_insights,
 #### Sample Data
 
 ```elixir
-data = [ %{ "eventType": "Purchase", "account": 3, "amount": 259.54 }, %{ "eventType": "Purchase", "account": 5, "amount": 12309, "product": "Item" }]]
+data = [ %{ "eventType": "Workers/MyWorker", "account": 3, "amount": 259.54 }, %{ "eventType": "Sample", "account": 5, "amount": 12309, "product": "Item" }]
 ```
 
 ## IMPORTANT
 
 * Every map inside the list MUST HAVE the key: `eventType`
 * The value of `eventType` can't be blank.
+* Use something useful to identify your event on the `eventType`, like your module/class.
 
 The docs can be found at [https://hexdocs.pm/newrelic_insights](https://hexdocs.pm/newrelic_insights).
 
-<!-- https://docs.newrelic.com/docs/insights/insights-data-sources/custom-data/insert-custom-events-insights-api#json-format -->
+### Newrelic references
+
+1.  [Data Reference and Sample](https://docs.newrelic.com/docs/insights/insights-data-sources/custom-data/insert-custom-events-insights-api#json-format)
+2.  To generate an `API KEY` `https://insights.newrelic.com/accounts/YOUR_ACCOUNT_HERE/manage/api_keys`
+3.  To see the event data you're sending `https://insights.newrelic.com/accounts/YOUR_ACCOUNT_HERE/explorer/events` click on the `PAGE VIEW` drop down and select the `EVENT TYPE` you sended.
