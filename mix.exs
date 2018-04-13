@@ -11,7 +11,12 @@ defmodule NewrelicInsights.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "A way to publish custom events data to NewRelic Insights data explorer. ",
-      package: package()
+      package: package(),
+      docs: [
+        main: "readme",
+        source_url: "https://github.com/renews/newrelic_insights",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -32,6 +37,7 @@ defmodule NewrelicInsights.MixProject do
 
   defp package do
     [
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: [" Renê Schneider, Thales Flores "],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/renews/newrelic_insights"}
