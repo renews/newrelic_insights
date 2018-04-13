@@ -16,7 +16,7 @@ defmodule NewrelicInsights.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      env: [account_id: "", api_key: ""]
+      env: [account_id: false, api_key: false]
     ]
   end
 
