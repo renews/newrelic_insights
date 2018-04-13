@@ -31,7 +31,7 @@ defmodule NewrelicInsights.MixProject do
     [
       {:jason, ">= 1.0.0"},
       {:ok, "~> 1.9"},
-      {:tesla, "~> 1.0.0-beta.1"}
+      {:tesla, "~> 0.10.0"}
     ]
   end
 
