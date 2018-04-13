@@ -38,7 +38,7 @@ defmodule NewrelicInsights.MixProject do
   defp package do
     [
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
-      maintainers: [" Renê Schneider, Thales Flores "],
+      maintainers: ["Renê Schneider", "Thales Flores"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/renews/newrelic_insights"}
     ]
