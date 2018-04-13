@@ -1,7 +1,7 @@
 defmodule NewrelicInsights.MixProject do
   use Mix.Project
 
-  @version "1.0.0"
+  @version "1.0.1"
 
   def project do
     [
@@ -10,7 +10,7 @@ defmodule NewrelicInsights.MixProject do
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      description: "This fly into the sky",
+      description: "A way to publish custom events data to NewRelic Insights data explorer. ",
       package: package()
     ]
   end
