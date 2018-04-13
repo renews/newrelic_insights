@@ -1,10 +1,12 @@
 defmodule NewrelicInsights.MixProject do
   use Mix.Project
 
+  @version "1.0.0"
+
   def project do
     [
       app: :newrelic_insights,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
