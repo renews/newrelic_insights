@@ -12,7 +12,8 @@ defmodule NewrelicInsights do
       :world
 
   """
-  def hello do
-    :world
+  def send(data) do
+    data
+    |> NewrelicInsights.Client.call()
   end
 end
