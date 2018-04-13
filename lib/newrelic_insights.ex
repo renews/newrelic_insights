@@ -12,7 +12,7 @@ defmodule NewrelicInsights do
       :world
 
   """
-  def send(data) do
+  def send_event(data) do
     data
     |> NewrelicInsights.Client.call()
   end
