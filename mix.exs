@@ -22,8 +22,9 @@ defmodule NewrelicInsights.MixProject do
 
   defp deps do
     [
-      {:tesla, "~> 1.0.0-beta.1"},
-      {:jason, ">= 1.0.0"}
+      {:jason, ">= 1.0.0"},
+      {:ok, "~> 1.9"},
+      {:tesla, "~> 1.0.0-beta.1"}
     ]
   end
 
