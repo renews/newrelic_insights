@@ -29,7 +29,6 @@ defmodule NewrelicInsights.MixProject do
 
   defp deps do
     [
-      {:jason, ">= 1.0.0"},
       {:ok, "~> 1.9"},
       {:tesla, "~> 0.10.0"}
     ]
