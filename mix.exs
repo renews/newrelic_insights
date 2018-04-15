@@ -1,7 +1,7 @@
 defmodule NewrelicInsights.MixProject do
   use Mix.Project
 
-  @version "1.0.1"
+  @version "1.0.3"
 
   def project do
     [
@@ -29,7 +29,6 @@ defmodule NewrelicInsights.MixProject do
 
   defp deps do
     [
-      {:jason, ">= 1.0.0"},
       {:ok, "~> 1.9"},
       {:tesla, "~> 0.10.0"}
     ]
