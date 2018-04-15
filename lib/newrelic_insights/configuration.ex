@@ -1,4 +1,8 @@
 defmodule NewrelicInsights.Configuration do
+  @moduledoc """
+  Handle configuration set on our environment files.
+  """
+
   def account_id do
     Application.fetch_env!(:newrelic_insights, :account_id)
     |> check_configuration
