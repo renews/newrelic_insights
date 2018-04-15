@@ -1,4 +1,8 @@
 defmodule NewrelicInsights.Client do
+  @moduledoc """
+  Check if everything is ok to send the request to NewRelic and
+  then send it.
+  """
   use Tesla
   require OK
   alias NewrelicInsights.Configuration
@@ -6,7 +10,6 @@ defmodule NewrelicInsights.Client do
 
   plug(Tesla.Middleware.JSON)
 
-  # build dynamic client based on runtime arguments
   def call(data) do
     OK.with do
       account_id <- Configuration.account_id()

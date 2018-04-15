@@ -1,4 +1,8 @@
 defmodule NewrelicInsights.Data do
+  @moduledoc """
+  Validates if the data we trying to send is valid.
+  """
+
   def validate_data(data) do
     case invalid_keys(data) do
       0 ->
