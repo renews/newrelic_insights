@@ -9,7 +9,7 @@ It's not a NewRelic monitoring tool
 
 **What is this?**
 
-A way to publish custom events data to New Relici Insights data explorer. With this we can create great graphic's to help with the monitoring of our integrations.
+A way to publish custom events data to New Relic Insights data explorer. With this we can create great graphic's to help with the monitoring of our integrations.
 
 ---
 
@@ -21,7 +21,7 @@ by adding `newrelic_insights` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:newrelic_insights, "~> 1.0.4"}
+    {:newrelic_insights, "~> 1.0.5"}
   ]
 end
 ```
@@ -39,7 +39,7 @@ config :newrelic_insights,
 
 ### Usage
 
-`Newrelic_insights.send_event(data)`
+`NewrelicInsights.send_event(data)`
 
 #### Sample Data
 
