@@ -36,14 +36,14 @@ defmodule NewrelicInsights.Client do
 
   defp build_request(account_id, api_key) do
     Tesla.build_client([
-      {Tesla.Middleware.Headers,
-       [{"Content-Type", "application/json"}, {"X-Insert-Key", api_key}]},
+      {Tesla.Middleware.Headers, %{"Content-Type": "application/json"}},
+      {Tesla.Middleware.Headers, %{"X-Insert-Key": api_key}},
       {Tesla.Middleware.BaseUrl,
        "https://insights-collector.newrelic.com/v1/accounts/" <> account_id <> "/events"}
     ])
   end
 
-  defp handle_response({:ok, response}) do
+  defp handle_response(response) do
     cond do
       response.status != 200 ->
         {:error, "[newrelic_insights] Something wrong with your configuration values."}
